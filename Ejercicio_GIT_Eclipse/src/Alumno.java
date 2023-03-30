@@ -2,6 +2,12 @@
 public class Alumno {
 	private String nombre, apellido, dni;
 
+	public Alumno() {
+		nombre="Alumno";
+		apellido="Por defecto";
+		dni="00000000 ";
+	}
+	
 	public Alumno(String nombre, String apellido, String dni) {
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -12,10 +18,11 @@ public class Alumno {
 	public String toString() {
 		String ret = "";
 		
-		ret += "__________________________";
-		ret += "\nNombre:\t "+nombre;
+		ret += "____________________________";
+		ret += "\nNombre:\t\t "+nombre;
 		ret += "\nApellido:\t "+apellido;
-		ret += "\nDNI:\t "+dni;
+		ret += "\nDNI:\t\t "+dni;
+		ret += "____________________________";
 		
 		return ret;
 	}
