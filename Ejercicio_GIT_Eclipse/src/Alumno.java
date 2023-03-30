@@ -2,6 +2,12 @@
 public class Alumno {
 	private String nombre, apellido, dni;
 
+	public Alumno() {
+		nombre="Sin nombre";
+		apellido="Sin apellido";
+		dni="sin DNI";
+	}
+	
 	public Alumno(String nombre, String apellido, String dni) {
 		this.nombre = nombre;
 		this.apellido = apellido;
