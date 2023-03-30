@@ -8,5 +8,16 @@ public class Alumno {
 		this.dni = dni;
 	} 
 	
+	@Override
+	public String toString() {
+		String ret = "";
+		
+		ret += "__________________________";
+		ret += "\nNombre:\t "+nombre;
+		ret += "\nApellido:\t "+apellido;
+		ret += "\nDNI:\t "+dni;
+		
+		return ret;
+	}
 	
 }
